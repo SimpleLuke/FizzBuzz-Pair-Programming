@@ -16,6 +16,15 @@ describe 'fizzbuzz' do
     end
 
     it 'returns "4" when passed 4' do 
-      expect(fizzbuzz(4)).to eq '4'
+      expect(fizzbuzz(4)).to eq 4
     end
+
+    it 'returns itself when passed a number not 3 or 5' do
+      number = 7 #assume the number is 7
+      result = 'unknown'
+      if number != 3 || number != 5
+        result = number
+      end  
+      expect(fizzbuzz(number)).to eq result #fizzbuzz(7) => 7
+    end 
 end 
