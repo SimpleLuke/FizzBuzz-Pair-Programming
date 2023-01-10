@@ -4,8 +4,11 @@ def fizzbuzz(number)
   elsif number % 3 == 0
     return 'Fizz'
   elsif number % 5 == 0
-    'Buzz'
-  elsif number != 3 || number != 5 
+    return'Buzz'
+  else
     return number
   end    
 end 
+
+# Make more readable
+# DRY => Dont repeat yourself
